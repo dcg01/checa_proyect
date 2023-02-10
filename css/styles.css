@@ -181,7 +181,9 @@ header {
 }
 /*aca puse fotos de las remeras para vender  */
 .remerasstore {
-    display: inline-block;
+    display: inline;
+    flex-direction: column;
+    justify-content: center;
     height: 150px;
     width: 120px;
     padding: 20px 20px;
