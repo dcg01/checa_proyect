@@ -205,10 +205,16 @@ header {
     /* fuente traida de google fonts */
     font-family: 'Anek Devanagari', sans-serif;
 }
-/* tamaño de los videos en vivo del index */
+/* tamaño y estilo de los videos en vivo del index */
 .video-en-vivo {
     width: 315px;
     height: 315px;
+    background-color: rgb(3, 3, 3);
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 15px 3px gray;
+
+    
 }
 /* esto es de la leyenda de copyright del footer*/
 .copyright {
