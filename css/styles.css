@@ -256,51 +256,6 @@ header {
 .distintas-paginas{
     color: darkslategrey;
 }
-/* acá apliqué un slider responsive a las fotos del page bio */
-.slider{
-    width: 50%;
-    margin: auto;
-    height: 900px;
-    overflow: hidden;
-}
-.slider ul{
-    padding: 0;
-    display: flex;
-    width: 1000%;
-    animation: slider 10s infinite;
-    animation-timing-function: linear;
-}
-.slider li{
-    width: 100%;
-    list-style: none;
-}
-.slider li img{
-    width: 100%;
-}
-@keyframes slider {
-    0% {margin-left: 0%;}
-    5% {margin-left: 0%;}
-    10% {margin-left: -50%;}
-    15% {margin-left: -50%;}
-    20% {margin-left: -100%;}
-    25% {margin-left: -100%;}
-    30% {margin-left: -150%;}
-    35% {margin-left: -150%;}
-    40% {margin-left: -200%;}
-    45% {margin-left: -200%;}
-    50% {margin-left: -250%;}
-    55% {margin-left: -250%;}
-    60% {margin-left: -300%;}
-    65% {margin-left: -300%;}
-    70% {margin-left: -350%;}
-    75% {margin-left: -350%;}
-    80% {margin-left: -400%;}
-    85% {margin-left: -400%;}
-    90% {margin-left: -450%;}
-    95% {margin-left: -450%;}
-    100% {margin-left:-500%;}
-    100% {margin-left:-450%;}
-}
 /* grid aplicado en el body de los distintos html */
 .grid-container{
     display: grid;
