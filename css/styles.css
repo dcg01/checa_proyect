@@ -294,9 +294,6 @@ header {
 }
 /* aca aplico mediaqueries a los distintos sectores del body */
 @media (max-width:780px) {
-    h1 {
-        background-color: green;
-    }
     .header{
         grid-area: header;
     }
