@@ -285,7 +285,30 @@ header {
     grid-area: footer;
 }
 /* aca aplico mediaqueries a los distintos sectores del body */
-@media (minwidth:400px) {
+@media (max-width:780px) {
+    h1 {
+        background-color: green;
+    }
+    .header{
+        grid-area: header;
+    }
+    .main{
+        grid-area: main;
+    }
+    .footer{
+        grid-area: footer;
+    }   
+}
+@media (max-width:480px) {
+    nav ul {
+        font-family: 'Anek Devanagari', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    h1 {
+        background-color: red;
+    }
     .header{
         grid-area: header;
     }
