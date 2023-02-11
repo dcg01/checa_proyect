@@ -159,7 +159,14 @@ header {
     font-weight: 320px;
     position: relative;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto;	;
+}
+.videos-en-youtube{
+    width: 40%;
+    background-color: rgb(3, 3, 3);
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 15px 3px gray;
 }
 /* esto es de los videos que subi en el html videos */
 .videossubidos {
@@ -169,7 +176,8 @@ header {
     padding: 40px 20px 20px 0;
     position: relative;
     max-width: 0px;
-    margin: 0 auto; 
+    margin: 0 auto;
+     
 }
 /* logos de las redes */
 .logo-red {
@@ -299,23 +307,33 @@ header {
         grid-area: footer;
     }   
 }
-@media (max-width:480px) {
-    nav ul {
-        font-family: 'Anek Devanagari', sans-serif;
+@media (max-width: 480px) {
+    .header {
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        align-items: center;
     }
-    h1 {
-        background-color: red;
+    .nombre-de-la-pagina {
+        margin-top: 20px;
     }
-    .header{
-        grid-area: header;
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .main{
-        grid-area: main;
+    .sectores-principales {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .footer{
-        grid-area: footer;
-    }   
-}
+    .noticias {
+        margin-bottom: 20px;
+        padding: 10px;
+      } 
+      .lista-de-videos {
+        width: 50%;
+      }
+      .video {
+        width: 80%;
+      }
+    }
