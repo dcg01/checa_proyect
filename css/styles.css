@@ -272,6 +272,10 @@ header {
 .distintas-paginas{
     color: darkslategrey;
 }
+.carousel-item{
+    max-width: 100%;
+    height: auto;
+}
 /* grid aplicado en el body de los distintos html */
 .grid-container{
     display: grid;
@@ -332,5 +336,9 @@ header {
       }
       .video {
         width: 100%;
+      }
+      .carousel-item {
+        max-width: 100%;
+        height: auto;
       }
     }
