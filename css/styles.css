@@ -161,8 +161,9 @@ header {
     max-width: 1000px;
     margin: 0 auto;	;
 }
+/* acá aplico estilos a los videos en vivo, del html videos */
 .videos-en-youtube{
-    width: 40%;
+    width: 50%;
     background-color: rgb(3, 3, 3);
     padding: 20px 20px 20px 20px;
     border-radius: 15px;
@@ -176,8 +177,7 @@ header {
     padding: 40px 20px 20px 0;
     position: relative;
     max-width: 0px;
-    margin: 0 auto;
-     
+    margin: 0 auto;    
 }
 /* logos de las redes */
 .logo-red {
@@ -220,9 +220,7 @@ header {
     background-color: rgb(3, 3, 3);
     padding: 20px 20px 20px 20px;
     border-radius: 15px;
-    box-shadow: 0px 2px 15px 3px gray;
-
-    
+    box-shadow: 0px 2px 15px 3px gray;  
 }
 /* esto es de la leyenda de copyright del footer*/
 .copyright {
@@ -272,9 +270,13 @@ header {
 .distintas-paginas{
     color: darkslategrey;
 }
+/* aca aplico estilos al carousel del html bio */
 .carousel-item{
-    max-width: 100%;
-    height: auto;
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 /* grid aplicado en el body de los distintos html */
 .grid-container{
@@ -332,7 +334,7 @@ header {
         padding: 10px;
       } 
       .lista-de-videos {
-        width: 50%;
+        width: 100%;
       }
       .video {
         width: 100%;
