@@ -14,7 +14,7 @@ body {
 .nombre-de-la-pagina {
     text-decoration: none;
     text-align: center;
-    font-size: 100px;
+    font-size: 200px;
     /* fuente traida de google fonts */
     font-family: 'Anek Devanagari', sans-serif;
 }
@@ -183,9 +183,10 @@ header {
 .logo-red {
     height: 25px;
     width: 25px;
+    text-align: left;
     display: inline-flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: end;
 }
 /*aca puse fotos de las remeras para vender  */
 .remerasstore {
@@ -266,17 +267,14 @@ header {
     padding: 5px;
     cursor: pointer;
 }
+.noticias {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 /* color de las opciones del menú */
 .distintas-paginas{
     color: darkslategrey;
-}
-/* aca aplico estilos al carousel del html bio */
-.carousel-item{
-    max-width: 50%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 /* grid aplicado en el body de los distintos html */
 .grid-container{
