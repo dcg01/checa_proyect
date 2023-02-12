@@ -333,12 +333,6 @@ header {
         margin-bottom: 20px;
         padding: 10px;
       } 
-      .lista-de-videos {
-        width: 100%;
-      }
-      .video {
-        width: 100%;
-      }
       .carousel-item {
         max-width: 100%;
         height: auto;
