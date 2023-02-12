@@ -51,7 +51,7 @@ p {
     font-size: large;
     height: 20px;
     font-weight: 20px;
-    padding: 20px 10px 10px 0;
+    padding: 20px 20px 20px 20px;
     position: relative;
     max-width: 500px;
     text-align: left;
@@ -334,5 +334,8 @@ header {
       .carousel-item {
         max-width: 100%;
         height: auto;
+      }
+      .historia-resumida {
+        text-align: justify;
       }
     }
