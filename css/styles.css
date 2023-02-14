@@ -35,7 +35,7 @@ p {
     font-size: medium;
     height: 30px;
     font-weight: 30px;
-    padding: 20px 10px 10px 0;
+    padding: 20px 10px 10px 20px;
     position: relative;
     max-width: 250px;
     margin: auto;
@@ -54,7 +54,8 @@ p {
     padding: 20px 20px 20px 20px;
     position: relative;
     max-width: 500px;
-    text-align: justify;
+    text-align: center;
+    margin: auto;
 }
 /* esto es del main del index */
 main {
@@ -157,10 +158,10 @@ header {
     flex-direction: column;
     justify-self: center;
     align-items: center;
-    font-weight: 320px;
     position: relative;
     max-width: 1000px;
     margin: 0 auto;	
+    padding-left: 0%;
 }
 /* acá aplico estilos a los videos en vivo, del html videos */
 .videos-en-youtube{
@@ -249,7 +250,6 @@ header {
     background-color:black;
     color: black;
     border-radius: 5px;
-    padding: 5px;
     cursor: pointer;
 }
 /* acá aplico pseudoclases a las noticias del section de mi index */
@@ -323,6 +323,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-left: 0%;
     }
     .sectores-principales {
         display: flex;
@@ -338,7 +339,8 @@ header {
         height: auto;
       }
       .historia-resumida {
-        text-align: justify;
-        margin-left: 5px;
+        text-align: left;
+        margin: auto;
+        border: 5px;
       }
 }
