@@ -66,6 +66,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 /* esto es del section del index */
 .sectores-principales {
@@ -159,7 +160,7 @@ header {
     font-weight: 320px;
     position: relative;
     max-width: 1000px;
-    margin: 0 auto;	;
+    margin: 0 auto;	
 }
 /* acá aplico estilos a los videos en vivo, del html videos */
 .videos-en-youtube{
