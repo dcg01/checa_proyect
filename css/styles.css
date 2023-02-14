@@ -297,7 +297,7 @@ header {
     grid-area: footer;
 }
 /* aca aplico mediaqueries a los distintos sectores del body */
-@media (max-width:780px) {
+@media (max-width:768px) {
     .header{
         grid-area: header;
     }
@@ -308,7 +308,7 @@ header {
         grid-area: footer;
     }   
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .header {
         display: flex;
         flex-direction: column;
