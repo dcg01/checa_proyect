@@ -309,7 +309,7 @@ header {
         grid-area: footer;
     }   
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     /* aca aplico estilos a distintas secciones para esa screen */
     .header {
         display: flex;
