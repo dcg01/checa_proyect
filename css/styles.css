@@ -308,7 +308,7 @@ header {
         grid-area: footer;
     }   
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .header {
         display: flex;
         flex-direction: column;
