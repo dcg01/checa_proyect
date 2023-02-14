@@ -309,6 +309,7 @@ header {
     }   
 }
 @media (max-width: 480px) {
+    /* aca aplico estilos a distintas secciones para esa screen */
     .header {
         display: flex;
         flex-direction: column;
@@ -337,5 +338,6 @@ header {
       }
       .historia-resumida {
         text-align: justify;
+        margin-left: 5px;
       }
-    }
+}
