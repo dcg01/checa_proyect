@@ -212,7 +212,7 @@ header {
     padding-left: 0%;
 }
 
-/* acá aplico estilos a los videos en vivo, del html videos */
+/* acá aplico estilos a los videos, del html videos */
 .videos-en-youtube {
     width: 80%;
     background-color: rgb(3, 3, 3);
@@ -221,16 +221,7 @@ header {
     box-shadow: 0px 2px 15px 3px gray;
 }
 
-/* esto es de los videos que subi en el html videos */
-.videossubidos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 20px 20px 0;
-    position: relative;
-    max-width: 0px;
-    margin: 0 auto;
-}
+
 
 /* logos de las redes */
 .logo-red {
