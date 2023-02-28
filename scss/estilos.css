@@ -4,6 +4,7 @@
   padding: 0%;
 }
 
+/*import fuentes*/
 /* fondo de los body de cada page */
 body {
   background-image: url(../multimedia/img/advertise-768064.jpg);
@@ -18,7 +19,8 @@ body {
   text-decoration: none;
   text-align: center;
   font-size: 100px;
-  /* fuente traida de google fonts */
+  font-weight: bold;
+  /* fuente traida de google fonts usando variable global*/
   font-family: "Anek Devanagari", sans-serif;
 }
 
@@ -46,15 +48,21 @@ p {
   margin: auto;
 }
 
+h2 {
+  /*aplico variables locales*/
+  font-weight: bold;
+}
+
 /*parrafo en biografia */
 .historia-resumida {
   display: inline;
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  /* esta es la fuente exportada de G Fonts, y le agregué solid */
-  font-family: "Anek Devanagari", sans-serif solid;
+  /* esta es la fuente exportada de G Fonts usando variables globales, y le agregué solid */
+  font-family: "Anek Devanagari", sans-serif;
   font-size: large;
+  font-weight: bold;
   height: 20px;
   font-weight: 20px;
   padding: 20px 20px 20px 20px;
@@ -108,34 +116,50 @@ main {
   text-decoration: none;
   text-align: center;
   font-size: 30px;
-  /* fuente traida de google fonts */
+  /* fuente traida de google fonts usando variables globales*/
   font-family: "Anek Devanagari", sans-serif;
 }
 
-/* este es el formato de los li del ul*/
-ul li a {
-  text-decoration: none;
-  text-align: left;
-  font-size: 30px;
-  /* fuente traida de google fonts */
-  font-family: "Anek Devanagari", sans-serif;
-}
-
-/* botones de volver al inicio de cada page */
+/*este es el nav del menu de navegación del index*/
+/*nesting del nav de cada page con scss*/
 nav ul {
-  font-family: "Anek Devanagari", sans-serif;
+  /* botones de volver al inicio de cada page */
   display: flex;
   flex-direction: row;
   justify-content: start;
+  /* este es el diseño  de los accesos a las distintas pages -donde clicker, ej discos videos- */
 }
-
-/* este es el diseño  de los accesos a las distintas pages -donde clicker, ej discos videos- */
-nav li {
+nav ul li {
   padding: 40px 50px;
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  /* este es el formato de los li del ul*/
+}
+nav ul li .distintas-paginas {
+  text-decoration: none;
+  color: darkslategrey;
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  /* fuente traida de google fonts */
+  font-family: "Anek Devanagari", sans-serif;
+  /* acá aplico pseudoclases a los botones del menu del nav */
+}
+nav ul li .distintas-paginas:hover {
+  /* acá aplico pseudoclases a los botones del menu del nav */
+  background-color: rgba(99, 91, 91, 0.151);
+  border-radius: 5px;
+  padding: 5px;
+  color: antiquewhite;
+  cursor: pointer;
+}
+nav ul li .distintas-paginas:active {
+  background-color: black;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* aca puse edición del footer */
@@ -234,8 +258,9 @@ header {
   text-decoration: none;
   text-align: center;
   font-size: 40px;
-  /* fuente traida de google fonts */
+  /* aplico variables globales*/
   font-family: "Anek Devanagari", sans-serif;
+  font-weight: bold;
 }
 
 /* tamaño y estilo de los videos en vivo del index */
@@ -254,29 +279,6 @@ header {
   padding: 10px 0;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: small;
-}
-
-/* estilo letra de los precios de remeras, en el index */
-.letra-resaltada {
-  font-family: "Anek Devanagari", sans-serif;
-  font-size: x-large;
-}
-
-/* acá aplico pseudoclases al menu de opciones */
-.distintas-paginas:hover {
-  background-color: rgba(99, 91, 91, 0.151);
-  border-radius: 5px;
-  padding: 5px;
-  color: antiquewhite;
-  cursor: pointer;
-}
-
-/* aca acplico pseudoclases al menu de opciones */
-.distintas-paginas:active {
-  background-color: black;
-  color: black;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 /* acá aplico pseudoclases a las noticias del section de mi index */
@@ -301,11 +303,6 @@ header {
   display: block;
   margin-bottom: 20px;
   margin-top: 20px;
-}
-
-/* color de las opciones del menú */
-.distintas-paginas {
-  color: darkslategrey;
 }
 
 /* grid aplicado en el body de los distintos html */

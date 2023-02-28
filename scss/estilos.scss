@@ -2,6 +2,9 @@
     margin: 0%;
     padding: 0%;
 }
+/*import fuentes*/
+@import "fuentes";
+
 /* fondo de los body de cada page */
 body {
     background-image: url(../multimedia/img/advertise-768064.jpg);
@@ -10,14 +13,17 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
 /* esto es el titulo principal de las pages*/
 .nombre-de-la-pagina {
     text-decoration: none;
     text-align: center;
     font-size: 100px;
-    /* fuente traida de google fonts */
-    font-family: 'Anek Devanagari', sans-serif;
+    font-weight: bold;
+    /* fuente traida de google fonts usando variable global*/
+    font-family: $fuente-principal;
 }
+
 /* este es el video del section que se llama recitales */
 video {
     height: 120px;
@@ -26,6 +32,7 @@ video {
     position: relative;
     max-width: 1000px;
 }
+
 /*esto pertenece a los textos del html noticias (en index) y proximas fechas (en page tickets)*/
 p {
     display: flex;
@@ -40,15 +47,22 @@ p {
     max-width: 250px;
     margin: auto;
 }
+
+h2 {
+    /*aplico variables locales*/
+    $fuente-secundaria: bold;
+    font-weight: $fuente-secundaria;
+}
 /*parrafo en biografia */
 .historia-resumida {
     display: inline;
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    /* esta es la fuente exportada de G Fonts, y le agregué solid */
-    font-family: 'Anek Devanagari', sans-serif solid;
+    /* esta es la fuente exportada de G Fonts usando variables globales, y le agregué solid */
+    font-family: $fuente-principal;
     font-size: large;
+    font-weight: $fuente-titulos-negrita;
     height: 20px;
     font-weight: 20px;
     padding: 20px 20px 20px 20px;
@@ -57,6 +71,7 @@ p {
     text-align: center;
     margin: auto;
 }
+
 /* esto es del main del index */
 main {
     background-image: url(../multimedia/img/advertise-768064.jpg);
@@ -69,6 +84,7 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 /* esto es del section del index */
 .sectores-principales {
     padding: 50px 50px 20px;
@@ -79,8 +95,10 @@ main {
     text-align: center;
     font-size: 30px;
     /* fuente traida de google fonts */
-    font-family: 'Anek Devanagari', sans-serif;
+    font-family: $fuente-principal;
+
 }
+
 /* esto es el sector del formulario en el index */
 .formulario-datos {
     display: flex;
@@ -89,8 +107,9 @@ main {
     padding: 10px 10px 10px 10px;
     align-items: center;
 }
+
 /* esta es la pregunta en el page videos */
-.proximo-video{
+.proximo-video {
     padding: 50px 50px 20px;
     position: relative;
     max-width: 1200px;
@@ -98,33 +117,61 @@ main {
     text-decoration: none;
     text-align: center;
     font-size: 30px;
-    /* fuente traida de google fonts */
-    font-family: 'Anek Devanagari', sans-serif;
+    /* fuente traida de google fonts usando variables globales*/
+    font-family: $fuente-principal;
 }
 
-/* este es el formato de los li del ul*/
-ul li a {
-    text-decoration: none;
-    text-align: left;
-    font-size: 30px;
-    /* fuente traida de google fonts */
-    font-family: 'Anek Devanagari', sans-serif;
+/*este es el nav del menu de navegación del index*/
+/*nesting del nav de cada page con scss*/
+nav {
+    ul {
+        /* botones de volver al inicio de cada page */
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+
+        /* este es el diseño  de los accesos a las distintas pages -donde clicker, ej discos videos- */
+        li {
+            padding: 40px 50px;
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+
+            /* este es el formato de los li del ul*/
+            .distintas-paginas {
+                text-decoration: none;
+                color: darkslategrey;
+                text-align: left;
+                font-size: 30px;
+                font-weight: $fuente-titulos-negrita;
+                /* fuente traida de google fonts */
+                font-family: $fuente-principal;
+
+                &:hover {
+                    /* acá aplico pseudoclases a los botones del menu del nav */
+                    background-color: rgba(99, 91, 91, 0.151);
+                    border-radius: 5px;
+                    padding: 5px;
+                    color: antiquewhite;
+                    cursor: pointer;
+                }
+
+                /* acá aplico pseudoclases a los botones del menu del nav */
+                &:active {
+                    background-color: black;
+                    color: black;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+
+
+
+        }
+    }
 }
-/* botones de volver al inicio de cada page */
-nav ul {
-    font-family: 'Anek Devanagari', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-}
-/* este es el diseño  de los accesos a las distintas pages -donde clicker, ej discos videos- */
-nav li {
-    padding: 40px 50px;
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-}
+
 /* aca puse edición del footer */
 #finale {
     display: inline-block;
@@ -135,6 +182,7 @@ nav li {
     text-align: left;
     font-size: x-large;
 }
+
 /* esto es el formato del header*/
 header {
     padding: 40px 40px 40px 40px;
@@ -142,6 +190,7 @@ header {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 /* edicion de los discos */
 .lista-de-canciones {
     display: flex;
@@ -152,6 +201,7 @@ header {
     max-width: 620px;
     margin: 0 auto;
 }
+
 /* edicion de los videos*/
 .lista-de-videos {
     display: flex;
@@ -160,17 +210,19 @@ header {
     align-items: center;
     position: relative;
     max-width: 1000px;
-    margin: 0 auto;	
+    margin: 0 auto;
     padding-left: 0%;
 }
+
 /* acá aplico estilos a los videos en vivo, del html videos */
-.videos-en-youtube{
+.videos-en-youtube {
     width: 80%;
     background-color: rgb(3, 3, 3);
     padding: 20px 20px 20px 20px;
     border-radius: 15px;
     box-shadow: 0px 2px 15px 3px gray;
 }
+
 /* esto es de los videos que subi en el html videos */
 .videossubidos {
     display: flex;
@@ -179,8 +231,9 @@ header {
     padding: 40px 20px 20px 0;
     position: relative;
     max-width: 0px;
-    margin: 0 auto;    
+    margin: 0 auto;
 }
+
 /* logos de las redes */
 .logo-red {
     height: 25px;
@@ -190,6 +243,7 @@ header {
     flex-direction: row;
     justify-content: end;
 }
+
 /*aca puse fotos de las remeras para vender  */
 .remerasstore {
     display: inline;
@@ -201,21 +255,24 @@ header {
     position: relative;
     max-width: 1200px;
 }
+
 /* esto aplica al área los nombres de los discos, en el page index (recital en vivo), discos y videos */
 .nombres-canciones {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 50px 10px 20px 0px;
-    position:relative;
+    position: relative;
     max-width: 1200px;
     margin: auto;
     text-decoration: none;
     text-align: center;
     font-size: 40px;
-    /* fuente traida de google fonts */
-    font-family: 'Anek Devanagari', sans-serif;
+    /* aplico variables globales*/
+    font-family: $fuente-principal;
+    font-weight: $fuente-titulos-negrita;
 }
+
 /* tamaño y estilo de los videos en vivo del index */
 .video-en-vivo {
     width: 315px;
@@ -223,8 +280,9 @@ header {
     background-color: rgb(3, 3, 3);
     padding: 20px 20px 20px 20px;
     border-radius: 15px;
-    box-shadow: 0px 2px 15px 3px gray;  
+    box-shadow: 0px 2px 15px 3px gray;
 }
+
 /* esto es de la leyenda de copyright del footer*/
 .copyright {
     display: inline-block;
@@ -232,26 +290,7 @@ header {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: small;
 }
-/* estilo letra de los precios de remeras, en el index */
-.letra-resaltada {
-    font-family: 'Anek Devanagari', sans-serif;
-    font-size: x-large;
-}
-/* acá aplico pseudoclases al menu de opciones */
-.distintas-paginas:hover {
-    background-color: rgba(99, 91, 91, 0.151);
-    border-radius: 5px;
-    padding: 5px;
-    color: antiquewhite;
-    cursor: pointer;
-}
-/* aca acplico pseudoclases al menu de opciones */
-.distintas-paginas:active {
-    background-color:black;
-    color: black;
-    border-radius: 5px;
-    cursor: pointer;
-}
+
 /* acá aplico pseudoclases a las noticias del section de mi index */
 .noticias:hover {
     background-color: rgba(99, 91, 91, 0.151);
@@ -260,87 +299,100 @@ header {
     color: antiquewhite;
     cursor: pointer;
 }
+
 /*acá aplico pseudoclases a las noticias del section de mi index*/
 .noticias:active {
-    background-color:rgba(33, 25, 58, 0.534);
+    background-color: rgba(33, 25, 58, 0.534);
     color: black;
     border-radius: 5px;
     padding: 5px;
     cursor: pointer;
 }
+
 .noticias {
     display: block;
     margin-bottom: 20px;
     margin-top: 20px;
 }
-/* color de las opciones del menú */
-.distintas-paginas{
-    color: darkslategrey;
-}
+
 /* grid aplicado en el body de los distintos html */
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
 }
+
 /* aca aplico grid area a los distintos html */
-.header{
+.header {
     grid-area: header;
 }
-.main{
+
+.main {
     grid-area: main;
 }
-.footer{
+
+.footer {
     grid-area: footer;
 }
+
 /* aca aplico mediaqueries a los distintos sectores del body */
 @media (max-width:768px) {
-    .header{
+    .header {
         grid-area: header;
     }
-    .main{
+
+    .main {
         grid-area: main;
     }
-    .footer{
+
+    .footer {
         grid-area: footer;
-    }   
+    }
 }
+
 @media (max-width: 768px) {
+
     /* aca aplico estilos a distintas secciones para esa screen */
     .header {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .nombre-de-la-pagina {
         margin-top: 20px;
     }
+
     nav ul {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-left: 0%;
     }
+
     .sectores-principales {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .noticias {
         margin-bottom: 20px;
         padding: 10px;
-      } 
-      .carousel-item {
+    }
+
+    .carousel-item {
         max-width: 100%;
         height: auto;
-      }
-      .historia-resumida {
+    }
+
+    .historia-resumida {
         text-align: left;
         margin: auto;
         border: 5px;
-      }
+    }
 }
