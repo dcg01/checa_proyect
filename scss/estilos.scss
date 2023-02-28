@@ -2,7 +2,8 @@
     margin: 0%;
     padding: 0%;
 }
-/*import fuentes*/
+
+/*import fuentes del archivo llamado _fuentes.scss*/
 @import "fuentes";
 
 /* fondo de los body de cada page */
@@ -51,8 +52,11 @@ p {
 h2 {
     /*aplico variables locales*/
     $fuente-secundaria: bold;
+    $tamaño-letra: 60px;
     font-weight: $fuente-secundaria;
+    font-size: $tamaño-letra;
 }
+
 /*parrafo en biografia */
 .historia-resumida {
     display: inline;
@@ -85,19 +89,18 @@ main {
     align-items: center;
 }
 
-/* esto es del section del index */
+/*maps aplicado a los sectores principales del index*/
 .sectores-principales {
-    padding: 50px 50px 20px;
-    position: relative;
-    max-width: 1200px;
-    margin: auto;
-    text-decoration: none;
-    text-align: center;
-    font-size: 30px;
-    /* fuente traida de google fonts */
-    font-family: $fuente-principal;
-
+    padding: map-get($map: $estilos, $key: estilo1);
+    position: map-get($map: $estilos, $key: estilo2);
+    max-width: map-get($map: $estilos, $key: estilo3);
+    margin: map-get($map: $estilos, $key: estilo4);
+    text-decoration: map-get($map: $estilos, $key: estilo5);
+    text-align: map-get($map: $estilos, $key: estilo6);
+    font-size: map-get($map: $estilos, $key: estilo7);
+    font-family: map-get($map: $estilos, $key: estilo8);
 }
+
 
 /* esto es el sector del formulario en el index */
 .formulario-datos {
@@ -109,16 +112,11 @@ main {
 }
 
 /* esta es la pregunta en el page videos */
+/*aca aplico @extend para traer los estilos de .sectores-principales a la class .proximo-video en el page videos*/
 .proximo-video {
-    padding: 50px 50px 20px;
-    position: relative;
-    max-width: 1200px;
-    margin: auto;
-    text-decoration: none;
-    text-align: center;
-    font-size: 30px;
-    /* fuente traida de google fonts usando variables globales*/
-    font-family: $fuente-principal;
+    @extend .sectores-principales;
+    /*aca aplico variable global a la letra*/
+    font-weight: $fuente-titulos-negrita;
 }
 
 /*este es el nav del menu de navegación del index*/
@@ -261,7 +259,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px 10px 20px 0px;
+    padding: 20px 10px 20px 10px;
     position: relative;
     max-width: 1200px;
     margin: auto;

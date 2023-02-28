@@ -1,2 +1,14 @@
 $fuente-principal: 'Anek Devanagari', sans-serif;
 $fuente-titulos-negrita: bold;
+/*maps*/
+$estilos: (
+    estilo1: 50px 50px 20px,
+    estilo2: relative,
+    estilo3: 1200px,
+    estilo4: auto,
+    estilo5: none,
+    estilo6: center,
+    estilo7: 30px,
+    /*aca aplico una variable global para la fuente de este map*/
+    estilo8: $fuente-principal,
+);
