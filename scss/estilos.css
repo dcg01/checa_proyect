@@ -122,13 +122,14 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: start;
+  padding: 0%;
   /* este es el diseño  de los accesos a las distintas pages -donde clicker, ej discos videos- */
 }
 nav ul li {
   padding: 40px 50px;
   position: relative;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   /* este es el formato de los li del ul*/
 }
