@@ -6,6 +6,8 @@
 
 /*import fuentes del archivo llamado _fuentes.scss*/
 /*maps*/
+/*aca aplico mixin para luego replicar en ditintas clases*/
+/* aca aplico mixin para los porcentajes para la  animacion*/
 /* fondo de los body de cada page */
 body {
   background-image: url(../multimedia/img/advertise-768064.jpg);
@@ -23,6 +25,19 @@ body {
   font-weight: bold;
   /* fuente traida de google fonts usando variable global*/
   font-family: "Anek Devanagari", sans-serif;
+  animation: scale 5s ease-in-out;
+  /* Define la clase de animación*/
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* este es el video del section que se llama recitales */
@@ -53,6 +68,7 @@ h2 {
   /*aplico variables locales*/
   font-weight: bold;
   font-size: 60px;
+  /* Aca aplico la animación*/
 }
 
 /*parrafo en biografia */
@@ -178,7 +194,7 @@ header {
 }
 
 /* edicion de los discos */
-.lista-de-canciones {
+.lista-de-discos {
   display: flex;
   flex-direction: column;
   justify-self: center;
@@ -200,13 +216,14 @@ header {
   padding-left: 0%;
 }
 
-/* acá aplico estilos a los videos, del html videos */
+/* acá aplico estilos con mixin trayendolo con include a los videos, del html videos */
 .videos-en-youtube {
   width: 80%;
-  background-color: rgb(3, 3, 3);
-  padding: 20px 20px 20px 20px;
   border-radius: 15px;
-  box-shadow: 0px 2px 15px 3px gray;
+  background-color: black;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 0px 2px 15px 3px;
+  background-color: black;
 }
 
 /* logos de las redes */
@@ -298,19 +315,6 @@ header {
   grid-template-areas: "header" "main" "footer";
 }
 
-/* aca aplico grid area a los distintos html */
-.header {
-  grid-area: header;
-}
-
-.main {
-  grid-area: main;
-}
-
-.footer {
-  grid-area: footer;
-}
-
 /* aca aplico mediaqueries a los distintos sectores del body */
 @media (max-width: 768px) {
   .header {
@@ -325,11 +329,6 @@ header {
 }
 @media (max-width: 768px) {
   /* aca aplico estilos a distintas secciones para esa screen */
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .nombre-de-la-pagina {
     margin-top: 20px;
   }

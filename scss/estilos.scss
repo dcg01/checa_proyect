@@ -6,6 +6,29 @@
 /*import fuentes del archivo llamado _fuentes.scss*/
 @import "fuentes";
 
+/*aca aplico mixin para luego replicar en ditintas clases*/
+@mixin distintosestilos ($estiloA, $estiloB, $estiloC) {
+    width: $estiloA;
+    border-radius: $estiloC;
+    background-color: $estiloB;
+}
+/* aca aplico mixin para los porcentajes para la  animacion*/
+@mixin animacion-a-escala {
+    @keyframes scale {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.2);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+}
+
 /* fondo de los body de cada page */
 body {
     background-image: url(../multimedia/img/advertise-768064.jpg);
@@ -23,6 +46,9 @@ body {
     font-weight: bold;
     /* fuente traida de google fonts usando variable global*/
     font-family: $fuente-principal;
+    animation: scale 5s ease-in-out;
+    /* Define la clase de animación*/
+   @include animacion-a-escala;
 }
 
 /* este es el video del section que se llama recitales */
@@ -55,7 +81,9 @@ h2 {
     $tamaño-letra: 60px;
     font-weight: $fuente-secundaria;
     font-size: $tamaño-letra;
+    /* Aca aplico la animación*/
 }
+
 
 /*parrafo en biografia */
 .historia-resumida {
@@ -75,7 +103,6 @@ h2 {
     text-align: center;
     margin: auto;
 }
-
 /* esto es del main del index */
 main {
     background-image: url(../multimedia/img/advertise-768064.jpg);
@@ -136,7 +163,7 @@ nav {
             max-width: 1200px;
             margin: auto;
             display: flex;
-            
+
             /* este es el formato de los li del ul*/
             .distintas-paginas {
                 text-decoration: none;
@@ -191,7 +218,7 @@ header {
 }
 
 /* edicion de los discos */
-.lista-de-canciones {
+.lista-de-discos {
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -213,16 +240,13 @@ header {
     padding-left: 0%;
 }
 
-/* acá aplico estilos a los videos, del html videos */
+/* acá aplico estilos con mixin trayendolo con include a los videos, del html videos */
 .videos-en-youtube {
-    width: 80%;
-    background-color: rgb(3, 3, 3);
+    @include distintosestilos(80%, black, 15px);
     padding: 20px 20px 20px 20px;
-    border-radius: 15px;
-    box-shadow: 0px 2px 15px 3px gray;
+    box-shadow: 0px 2px 15px 3px;
+    background-color: black;
 }
-
-
 
 /* logos de las redes */
 .logo-red {
@@ -316,19 +340,6 @@ header {
         "footer";
 }
 
-/* aca aplico grid area a los distintos html */
-.header {
-    grid-area: header;
-}
-
-.main {
-    grid-area: main;
-}
-
-.footer {
-    grid-area: footer;
-}
-
 /* aca aplico mediaqueries a los distintos sectores del body */
 @media (max-width:768px) {
     .header {
@@ -347,11 +358,6 @@ header {
 @media (max-width: 768px) {
 
     /* aca aplico estilos a distintas secciones para esa screen */
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
     .nombre-de-la-pagina {
         margin-top: 20px;
@@ -386,4 +392,3 @@ header {
         border: 5px;
     }
 }
-  
