@@ -91,7 +91,7 @@ h2 {
 }
 
 /* esto es del main del index */
-main {
+.main1 {
   background-image: url(../multimedia/img/advertise-768064.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -186,7 +186,7 @@ nav ul li .distintas-paginas:active {
 }
 
 /* esto es el formato del header*/
-header {
+.header1 {
   padding: 40px 40px 40px 40px;
   position: relative;
   max-width: 1200px;
