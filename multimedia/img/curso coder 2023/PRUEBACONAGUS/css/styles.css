@@ -1,0 +1,77 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.body {
+    display: grid;
+    /* filas */
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 70px 50px 400px 100px;
+    grid-template-areas: 
+    "header header" /*el de 70px */
+    "navbar navbar" /*el de 50px*/
+    "main aside" /* 400px */
+    "footer footer" /*100px*/;  
+}
+
+.body>* {
+    box-shadow: 0px 0px 1px 1px black;
+    text-align: center;
+}
+.header{
+    grid-area: header;
+    background-color: chartreuse;
+}
+.main{
+    grid-area: main;
+    background-color: chocolate;
+}
+.navbar{
+    grid-area: navbar;
+    background-color: blue;
+}
+.sidebar{
+    grid-area: aside;
+    background-color: blueviolet;
+}
+.footer{
+    grid-area: footer;
+    background-color: black;
+}
+/* cuando se maximo sea 500px, ya no se aplica el siguiente  */
+@media (max-width:700px){
+    .body {
+        display: grid;
+        /* filas */
+        grid-template-columns: 100%;
+        grid-template-rows: 70px 50px 400px 100px 100px;
+        grid-template-areas: 
+        "header" /*el de 70px */
+        "navbar" /*el de 50px*/
+        "main"
+        "aside" /* 400px */
+        "footer";
+    }
+    .header{
+        grid-area: header;
+        background-color: chartreuse;
+    }
+    .main{
+        grid-area: main;
+        background-color: chocolate;
+    }
+    .navbar{
+        grid-area: navbar;
+        background-color: blue;
+        
+    }
+    .sidebar{
+        grid-area: aside;
+        background-color: blueviolet;
+    }
+    .footer{
+        grid-area: footer;
+        background-color: black;
+    }
+}

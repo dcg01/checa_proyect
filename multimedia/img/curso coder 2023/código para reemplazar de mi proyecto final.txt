@@ -1,0 +1,652 @@
+proyecto actual:
+
+INDEX
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- importar de fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100&family=Bungee+Spice&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>CHECA</title>
+</head>
+<body class="grid-container">
+    <header class="header">
+        <!--logos y menú redes -->
+        <div>
+            <nav>
+                <a href="./index.html"></a>
+                <a class="logo-red" href="https://www.instagram.com/?hl=es" target="_blank"><img
+                        src="./multimedia/img/instagram.png" alt="logo de instagram"></a>
+                <a class="logo-red" href="https://www.youtube.com/channel/UC9vayaDE7frPDwC_U1odz9w" target="_blank"><img
+                        src="./multimedia/img/youtube.png" alt="logo youtube"></a>
+                <a class="logo-red"
+                    href="https://open.spotify.com/artist/4ZQMSQzbCRouQBDSaegXMK?si=0PtKD0b6RcCAol_aSLzwHQ&dl_branch=1&nd=1"
+                    target="_blank"><img src="./multimedia/img/spotify.png" alt="logo spotify"></a>
+                <!-- título central de la web -->
+                <h1>CHECA</h1>
+            </nav>
+        </div>
+        <!--opciones de menu -->
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="./pages/videos.html">VIDEOS</a></li>
+                    <li><a href="./pages/discos.html">DISCOS</a></li>
+                    <li><a href="./pages/biografia.html">BIO</a></li>
+                    <li><a href="./pages/tickets.html">TICKETS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <!-- las 3 partes centrales -->
+        <section class="sectores-principales">
+            <div>
+                <h2>RECITALES</h2>
+                <video src="./multimedia/video/WhatsApp Video 2022-12-17 at 10.57.10.mp4" controls></video>
+                <p class="noticias">16.12, @moscuespaciocultural, Palermo, CABA</p>
+            </div>
+        </section>
+        <section class="sectores-principales">
+            <div>
+                <h2>NOTICIAS</h2>
+                <p class="noticias">Checa presentó nuevo cantante</p>
+                <p class="noticias">Proximamente nuevas fechas para el verano 2023</p>
+                <p class="noticias">Escribinos si queres participar del próximo video</p>
+                <!-- aca esta el formulario para cargar datos -->
+                <article>
+                    <form class="formulario-datos">
+                        <input class="formulario-datos" type="text" placeholder="Nombre">
+                        <input class="formulario-datos" type="text" placeholder="Apellido">
+                        <input class="formulario-datos" type="email" placeholder="abc@gmail.com" name="email">
+                        <p>Por qué queres estar en un video de Checa?</p>
+                        <textarea placeholder="contanos acá"></textarea>
+                        <input type="submit">
+                    </form>
+                </article>
+            </div>
+        </section>
+        <section class="sectores-principales">
+            <div>
+                <!-- aca estan las fotos de las remeras -->
+                <h2>STORE</h2>
+                <img class="remerasstore" src="./multimedia/img/remera1.JPG" alt="foto remera 1">
+                <h5 class="letra-resaltada">$ 5000</h5>
+                <img class="remerasstore" src="./multimedia/img/remera2.JPG" atl="foto remera 2">
+                <h5 class="letra-resaltada">$ 5000</h5>
+            </div>
+        </section>
+    </main>
+    <!--  este es el pie-->
+    <footer id="finale" class="footer">
+        <div>
+            <h4 class="copyright">© Copyright Daniel Cohen 2023</h4>
+        </div>
+</body>
+</html>
+
+
+
+
+
+PAGES
+
+
+
+
+
+BIOGRAFIA
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100&family=Bungee+Spice&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>biografia</title>
+</head>
+<body class="grid-container">
+    <header class="header">
+        <nav>
+            <!--logos y menú redes -->
+            <a class="logo-red" href="https://www.instagram.com/?hl=es" target="_blank"><img
+                    src="../multimedia/img/instagram.png" alt="logo de instagram"></a>
+            <a class="logo-red" href="https://www.youtube.com/channel/UC9vayaDE7frPDwC_U1odz9w" target="_blank"><img
+                    src="../multimedia/img/youtube.png" alt="logo youtube"></a>
+            <a class="logo-red"
+                href="https://open.spotify.com/artist/4ZQMSQzbCRouQBDSaegXMK?si=0PtKD0b6RcCAol_aSLzwHQ&dl_branch=1&nd=1"
+                target="_blank"><img src="../multimedia/img/spotify.png" alt="logo spotify"></a>
+            <div>
+                <h1>BIO</h1>
+            </div>
+            <!--opciones de menu -->
+            <div>
+                <nav class="grid-en-menu">
+                    <ul>
+                        <li><a href="../index.html">INICIO</a></li>
+                        <li><a href="../pages/videos.html">VIDEOS</a></li>
+                        <li><a href="../pages/discos.html">DISCOS</a></li>
+                        <li><a href="../pages/biografia.html">BIO</a></li>
+                        <li><a href="../pages/tickets.html">TICKETS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section>
+            <div>
+                <p class="historia-resumida">Formada en julio de 2017 en la ciudad de Buenos Aires Argentina. | From
+                    Buenos
+                    Aires, Argentina. since july 2017. Integrantes/Performers: Fernando Palladino - Voz | Daniel Cohen -
+                    Guitarra - Coros | Martin Santojanni - Guitarra | Alfredo Hodes - Bajo | Valentino Concillo -
+                    Teclados |
+                    Sebastian Balcastro - Batería.
+                    La banda se formó en Villa Crespo, CABA, originalmente por Daniel, Sebastián Y Alfred.
+                    Siendo amigos que se conocieron haciendo teatro (impro), decidieron formar una banda con influencias
+                    de
+                    rock de guitarras (llamese brit pop).
+                    Comenzaron tocando por pubs y bares de la zona, hasta que lograron grabar de manera independiente su
+                    primer EP
+                    llamado Magia.
+                    El mismo se grabó en los estudios Azteca, en el barrio de Villa Urquiza, pertenecientes a una banda
+                    amiga, llamada Jabalina.
+                    La producción contó con 4 tracks, de los cuales Deja Vu terminó siendo el primer corte con clip
+                    incluído.
+                    Las otras 3 canciones que componen el EP debut son:
+                    Buenos Aires, Y si hoy y Magia.
+                    Luego de dos años, en 2019 grabaron ION (en vivo), un EP que contaba con canciones nuevas, y fue
+                    grabado
+                    y masterizado
+                    en los míticos estudios ION, en CABA.
+                    De esa producción, hoy se encuentran los videos de las 3 canciones que lo componen, los cuales
+                    siguen
+                    girando en todas las
+                    plataformas disponibles.
+                    El set list se compone de:
+                    Despertar, Sueños dormidos, y Sombras sin forma.
+                    Luego de la pandemia, en 2022, la banda sumó al nuevo cantante, Fernando Palladino, y actualmente se
+                    encuentra ensayando y
+                    preparando nuevo material, que podrá disfrutarse durante este año.
+                    La banda tiene como objetivo salir a tocar y grabar su tercer material, durante 2023.</p>
+            </div>
+        </section>
+    </main>
+    <footer id="finale" class="footer">
+        <div>
+            <h4 class="copyright">© Copyright Daniel Cohen 2023</h4>
+        </div>
+    </footer>
+</body>
+</html>
+
+DISCOS
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100&family=Bungee+Spice&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>discos</title>
+</head>
+
+<body class="grid-container">
+    <header class="header">
+        <nav>
+            <!--logos y menú redes -->
+            <a class="logo-red" href="https://www.instagram.com/?hl=es" target="_blank"><img
+                    src="../multimedia/img/instagram.png" alt="logo de instagram"></a>
+            <a class="logo-red" href="https://www.youtube.com/channel/UC9vayaDE7frPDwC_U1odz9w" target="_blank"><img
+                    src="../multimedia/img/youtube.png" alt="logo youtube"></a>
+            <a class="logo-red"
+                href="https://open.spotify.com/artist/4ZQMSQzbCRouQBDSaegXMK?si=0PtKD0b6RcCAol_aSLzwHQ&dl_branch=1&nd=1"
+                target="_blank"><img src="../multimedia/img/spotify.png" alt="logo spotify"></a>
+            <div>
+                <h1>DISCOS</h1>
+            </div>
+            <!--opciones de menu -->
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">INICIO</a></li>
+                        <li><a href="../pages/videos.html">VIDEOS</a></li>
+                        <li><a href="../pages/discos.html">DISCOS</a></li>
+                        <li><a href="../pages/biografia.html">BIO</a></li>
+                        <li><a href="../pages/tickets.html">TICKETS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <!-- estos son los discos subidos -->
+        <section >
+            <div>
+                <nav>
+                    <ul class="lista-de-canciones">
+                        <li class="nombres-canciones">MAGIA</li>
+                        <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/album/5awpgctqzacbhPVrutoKlo?utm_source=generator"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                        <li class="nombres-canciones">ION (en vivo)</li>
+                        <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/album/5p78nU1smy1KuCpEKcxdxE?utm_source=generator"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+    </main>
+    <footer id="finale" class="footer">
+        <div>
+            <h4 class="copyright">© Copyright Daniel Cohen 2023</h4>
+        </div>
+    </footer>
+</body>
+</html>
+
+TICKETS
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100&family=Bungee+Spice&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>tickets</title>
+</head>
+<body class="grid-container">
+    <header class="header">
+        <nav>
+            <!--logos y menú redes -->
+            <a class="logo-red" href="https://www.instagram.com/?hl=es" target="_blank"><img
+                    src="../multimedia/img/instagram.png" alt="logo de instagram"></a>
+            <a class="logo-red" href="https://www.youtube.com/channel/UC9vayaDE7frPDwC_U1odz9w" target="_blank"><img
+                    src="../multimedia/img/youtube.png" alt="logo youtube"></a>
+            <a class="logo-red"
+                href="https://open.spotify.com/artist/4ZQMSQzbCRouQBDSaegXMK?si=0PtKD0b6RcCAol_aSLzwHQ&dl_branch=1&nd=1"
+                target="_blank"><img src="../multimedia/img/spotify.png" alt="logo spotify"></a>
+            <div>
+                <h1>TICKETS</h1>
+            </div>
+            <!--opciones de menu -->
+            <div>
+                <nav class="grid-en-menu">
+                    <ul>
+                        <li><a href="../index.html">INICIO</a></li>
+                        <li><a href="../pages/videos.html">VIDEOS</a></li>
+                        <li><a href="../pages/discos.html">DISCOS</a></li>
+                        <li><a href="../pages/biografia.html">BIO</a></li>
+                        <li><a href="../pages/tickets.html">TICKETS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <!--aca pongo la info de las proximas fechas-->
+        <section class="sectores-principales">
+            <div>
+                <h2>PROXIMOS RECITALES</h2>
+                <p>15.02 CABA</p>
+                <input type="submit" value="comprar tickets">
+                <p>01.03 CABA</p>
+                <input type="submit" value="comprar tickets">
+                <p>15.03 MAR DEL PLATA</p>
+                <input type="submit" value="comprar tickets">
+            </div>
+        </section>
+    </main>
+    <footer id="finale" class="footer">
+        <div>
+            <h4 class="copyright">© Copyright Daniel Cohen 2023</h4>
+        </div>
+    </footer>
+</body>
+</html>
+
+VIDEOS
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100&family=Bungee+Spice&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>VIDEOS</title>
+</head>
+
+<body class="grid-container">
+    <header class="header">
+        <nav>
+            <!--logos y menú redes -->
+            <a class="logo-red" href="https://www.instagram.com/?hl=es" target="_blank"><img
+                    src="../multimedia/img/instagram.png" alt="logo de instagram"></a>
+            <a class="logo-red" href="https://www.youtube.com/channel/UC9vayaDE7frPDwC_U1odz9w" target="_blank"><img
+                    src="../multimedia/img/youtube.png" alt="logo youtube"></a>
+            <a class="logo-red"
+                href="https://open.spotify.com/artist/4ZQMSQzbCRouQBDSaegXMK?si=0PtKD0b6RcCAol_aSLzwHQ&dl_branch=1&nd=1"
+                target="_blank"><img src="../multimedia/img/spotify.png" alt="logo spotify"></a>
+            <h1>VIDEOS</h1>
+            <!--opciones de menu -->
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">INICIO</a></li>
+                        <li><a href="../pages/videos.html">VIDEOS</a></li>
+                        <li><a href="../pages/discos.html">DISCOS</a></li>
+                        <li><a href="../pages/biografia.html">BIO</a></li>
+                        <li><a href="../pages/tickets.html">TICKETS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <!-- esta es la parte de los videos en el html de videos-->
+        <section>
+            <div>
+                <nav>
+                    <ul class="lista-de-videos">
+                        <li class="nombres-canciones">DEJA VU</li>
+                        <iframe class="videossubidos" width="560" height="315"
+                            src="https://www.youtube.com/embed/i4wC2aDoWTs" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <li class="nombres-canciones">DESPERTAR (vivo)</li>
+                        <iframe class="videossubidos" width="560" height="315"
+                            src="https://www.youtube.com/embed/ww9shNfF6mU" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <li class="nombres-canciones">SUEÑOS DORMIDOS</li>
+                        <iframe class="videossubidos" width="560" height="315"
+                            src="https://www.youtube.com/embed/aOlBC5LmUMw" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <li class="nombres-canciones">SOMBRAS SIN FORMA</li>
+                        <iframe class="videossubidos" width="560" height="315"
+                            src="https://www.youtube.com/embed/i-3AdPXqcEk" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen link></iframe>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+    <footer id="finale" class="footer">
+        <div>
+            <h4 class="copyright">© Copyright Daniel Cohen 2023</h4>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+.CSS
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+/* fondo de los body de cada page */
+body {
+    background-image: url(../multimedia/img/advertise-768064.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* esto es el titulo principal de las pages*/
+h1 {
+    text-decoration: none;
+    text-align: center;
+    font-size: 100px;
+    /* fuente traida de google fonts */
+    font-family: 'Anek Devanagari', sans-serif;
+}
+/* este es el video del section que se llama recitales */
+video {
+    height: 120px;
+    font-weight: 80px;
+    padding: 40px 20px 20px 20px;
+    position: relative;
+    max-width: 1000px;
+}
+/*esto pertenece a los textos del html noticias (en index) y proximas fechas (en page tickets)*/
+p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    height: 30px;
+    font-weight: 30px;
+    padding: 20px 10px 10px 0;
+    position: relative;
+    max-width: 250px;
+    margin: auto;
+}
+/*parrafo en biografia */
+.historia-resumida {
+    display: inline;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    /* esta es la fuente exportada de G Fonts, y le agregué solid */
+    font-family: 'Anek Devanagari', sans-serif solid;
+    font-size: large;
+    height: 20px;
+    font-weight: 20px;
+    padding: 20px 10px 10px 0;
+    position: relative;
+    max-width: 500px;
+    text-align: left;
+}
+/* esto es del main del index */
+main {
+    background-image: url(../multimedia/img/advertise-768064.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* esto es del section del index */
+.sectores-principales {
+    padding: 50px 50px 20px;
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    /* fuente traida de google fonts */
+    font-family: 'Anek Devanagari', sans-serif;
+}
+/* esto es el sector del formulario en el index */
+.formulario-datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+}
+/* este es el formato de los li del ul*/
+ul li a {
+    text-decoration: none;
+    text-align: left;
+    font-size: 30px;
+    /* fuente traida de google fonts */
+    font-family: 'Anek Devanagari', sans-serif;
+}
+/* botones de volver al inicio de cada page */
+nav ul {
+    font-family: 'Anek Devanagari', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+/* este es el diseño  de los accesos a las distintas pages -donde clicker, ej discos videos- */
+nav li {
+    padding: 40px 50px;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+/* aca puse edición del footer */
+#finale {
+    display: inline-block;
+    padding: 40px 50px 0;
+    position: relative;
+    max-width: 1200px;
+    text-decoration: none;
+    text-align: left;
+    font-size: x-large;
+}
+/* esto es el formato del header*/
+header {
+    padding: 40px 40px 40px 40px;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* edicion de los discos */
+.lista-de-canciones {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    height: 320;
+    font-weight: 320px;
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+}
+/* edicion de los videos*/
+.lista-de-videos {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    height: 320;
+    font-weight: 320px;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* logos de las redes */
+.logo-red {
+    height: 25px;
+    width: 25px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: start;
+}
+/*aca puse fotos de las remeras para vender  */
+.remerasstore {
+    display: inline-block;
+    height: 150px;
+    width: 120px;
+    padding: 20px 20px;
+    position: relative;
+    max-width: 1200px;
+}
+/* esto aplica al área los nombres de los discos, en el page discosy videos */
+.nombres-canciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 50px 20px;
+    position:relative;
+    max-width: 1200px;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+    /* fuente traida de google fonts */
+    font-family: 'Anek Devanagari', sans-serif;
+}
+/* esto es de los videos que subi en el html videos */
+.videossubidos {
+    display: flex;
+    flex-direction: column;
+    justify-self: initial;
+    height: 320;
+    font-weight: 320px;
+    padding: 40px 20px 20px 0;
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto; 
+}
+/* esto es de la leyenda de copyright del footer*/
+.copyright {
+    display: inline-block;
+    padding: 10px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+}
+/* estilo letra de los precios de remeras, en el index */
+.letra-resaltada {
+    font-family: 'Anek Devanagari', sans-serif;
+    font-size: x-large;
+}
+/* grid aplicado en el body de los distintos html */
+.grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+/* aca aplico grid area a los distintos html */
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
+
