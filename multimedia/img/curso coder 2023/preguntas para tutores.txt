@@ -1,7 +1,0 @@
-16-01
-
-preguntas para tutores:
-
-Cómo replicar .css en las pages html (lo puse en el head y no me tomó ningún cambio)
-
-Cómo agregar fondos que no sean web (el que esta, lo pegué en el index, directamente en el body)
