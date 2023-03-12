@@ -76,7 +76,6 @@ h2 {
   display: inline;
   flex-direction: column;
   justify-content: center;
-  position: absolute;
   /* esta es la fuente exportada de G Fonts usando variables globales, y le agregué solid */
   font-family: "Anek Devanagari", sans-serif;
   font-size: large;
@@ -88,6 +87,12 @@ h2 {
   max-width: 500px;
   text-align: center;
   margin: auto;
+}
+
+.parrafo-bio {
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* esto es del main del index */
