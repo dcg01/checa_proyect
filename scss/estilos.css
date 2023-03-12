@@ -312,6 +312,13 @@ nav ul li .distintas-paginas:active {
   margin-top: 20px;
 }
 
+/*estilos botones letras canciones html discos*/
+.letras {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 /* grid aplicado en el body de los distintos html */
 .grid-container {
   display: grid;
